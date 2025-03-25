@@ -4,13 +4,13 @@ import * as bip39 from "bip39";
 import bs58 from "bs58";
 
 const mnemonic =
-  "neither lonely flavor argue grass remind eye tag avocado spot unusual intact";
+  "as 12 palavras aqui";
 
 // Gerar a semente a partir da frase mnemônica
 const seed = bip39.mnemonicToSeedSync(mnemonic, "");
 const hd = HDKey.fromMasterSeed(seed.toString("hex"));
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 1; i++) {
   const path = `m/44'/501'/${i}'/0'`;
   
   // Derivar a chave privada a partir do caminho HD
