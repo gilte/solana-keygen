@@ -1,0 +1,16 @@
+{
+  "name": "solana-keygen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node address.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.32.0",
+    "bip39": "^3.0.4",
+    "bs58": "^6.0.0",
+    "micro-ed25519-hdkey": "^0.1.2"
+  }
+}
