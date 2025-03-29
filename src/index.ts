@@ -12,7 +12,7 @@ const seed = bip39.mnemonicToSeedSync(mnemonic, "");
 const hd = HDKey.fromMasterSeed(seed.toString("hex"));
 
 // Gerar as chaves a partir do caminho HD
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 1; i++) {
   const path = `m/44'/501'/${i}'/0'`;
 
   // Derivar a chave privada a partir do caminho HD
